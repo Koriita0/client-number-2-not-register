@@ -34,7 +34,6 @@ function App() {
       {/* Hero Section */}
       <div className="hero-section">
         <div className="hero-content">
-          <img className='background-big' src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0"></img>
           <h1 className="hero-title">Must-see series, movies & more.</h1>
           <p className="hero-subtitle">Choose a Max plan or bundle to start streaming.</p>
 
@@ -313,42 +312,42 @@ function App() {
 
         <div className="sports-categories">
           <div className="sports-category">
-            <img src="/sports-nba.jpg" alt="NBA" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="NBA" />
             <span>NBA</span>
           </div>
 
           <div className="sports-category">
-            <img src="/sports-nhl.jpg" alt="NHL" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="NHL" />
             <span>NHL</span>
           </div>
 
           <div className="sports-category">
-            <img src="/sports-mlb.jpg" alt="MLB" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="MLB" />
             <span>MLB™</span>
           </div>
 
           <div className="sports-category">
-            <img src="/sports-soccer.jpg" alt="U.S. Soccer" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="U.S. Soccer" />
             <span>U.S. Soccer</span>
           </div>
 
           <div className="sports-category">
-            <img src="/sports-nascar.jpg" alt="NASCAR" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="NASCAR" />
             <span>NASCAR</span>
           </div>
 
           <div className="sports-category">
-            <img src="/sports-unrivaled.jpg" alt="Unrivaled" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Unrivaled" />
             <span>Unrivaled</span>
           </div>
 
           <div className="sports-category">
-            <img src="/sports-college.jpg" alt="College Football" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="College Football" />
             <span>College Football</span>
           </div>
 
           <div className="sports-category">
-            <img src="/sports-cycling.jpg" alt="Cycling" />
+            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Cycling" />
             <span>Cycling</span>
           </div>
         </div>
