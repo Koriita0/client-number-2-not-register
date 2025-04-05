@@ -9,112 +9,104 @@ import { Facebook } from "./icons/Facebook"
 import { Twitter } from "./icons/Twitter"
 import { Instagram } from "./icons/Instagram"
 import { Youtube } from "./icons/Youtube"
+import icon from "./assets/icon.png"
 
 function App() {
-  const [activeTab, setActiveTab] = useState("bundles")
+  const [activeTab, setActiveTab] = useState("plans")
 
   return (
     <div className="app">
-      {/* Header */}
+      {/* Encabezado */}
       <header className="header">
         <div className="logo">
-          <img src="/max-logo.svg" alt="Max" />
+          <img src={icon} alt="Max" />
         </div>
         <div className="nav-actions">
           <button className="language-btn">
             <span className="globe-icon">🌐</span>
-            ENGLISH
+            ESPAÑOL
             <ChevronDown />
           </button>
-          <button className="sign-in-btn">SIGN IN</button>
-          <button className="sign-up-btn">SIGN UP NOW</button>
+          <button className="sign-up-btn">SUSCRÍBETE AHORA</button>
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Sección principal */}
+      <img className="background-big" src="https://www.adslzone.net/app/uploads-adslzone.net/2020/12/contenido-hbo-max-715x490.jpg"></img>
       <div className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">Must-see series, movies & more.</h1>
-          <p className="hero-subtitle">Choose a Max plan or bundle to start streaming.</p>
+          <h1 className="hero-title">Series, películas y más imperdibles.</h1>
+          <p className="hero-subtitle">Elige un plan de Max o un paquete para comenzar a ver.</p>
 
           <div className="plans-container">
-            {/* Max Only Plan */}
-            {/* Bundle Plan */}
+            {/* Plan solo Max */}
+            {/* Plan Paquete */}
             <div className="plan-card">
-              <div className="bundle-logos">
-                <img src="/disney-plus-logo.svg" alt="Disney+" />
-                <img src="/hulu-logo.svg" alt="Hulu" />
-                <img src="/max-logo.svg" alt="Max" />
+            <div className="plan-logo">
+                <img src={icon} alt="Max" />
               </div>
               <div className="plan-price">
-                <div className="price-label">PLANS START AT</div>
+                <div className="price-label">LOS PLANES COMIENZAN DESDE</div>
                 <div className="price">
                   <span className="dollar">$</span>
-                  <span className="amount">16.99</span>
-                  <span className="period">/MONTH</span>
+                  <span className="amount">350.00 </span>
+                  <span className="period">/MES</span>
                 </div>
               </div>
-              <button className="plan-cta">GET THE BUNDLE</button>
+              <button className="plan-cta">OBTENER EL PAQUETE</button>
             </div>
           </div>
 
-          {/* Legal Text */}
+          {/* Texto Legal */}
           <div className="legal-text">
             <p>
-              U.S. only. Must be 18+. Available only for direct-billed purchases via Disney+, Hulu, and Max. Access
-              content from each service separately. Content, feature and device compatibility vary by service. For
-              details, including info on billing and cancellation, visit the <a href="#">Help/Help Center</a>. Use of
-              Disney+, Hulu, and Max are subject to their respective terms and conditions, see each of:{" "}
-              <a href="#">Disney+ Subscriber Agreement</a>, <a href="#">Hulu Subscriber Agreement</a>, and
-              <a href="#"> Max Terms of Use</a>. ©2023 Disney and its related entities. Max ©2023 Home Box Office, Inc.
+              Solo MEXICO. Debes tener 18+. Disponible solo para compras con facturación directa a través de Disney+, Hulu y Max. Accede al contenido de cada servicio por separado. El contenido, las funciones y la compatibilidad con dispositivos varían según el servicio. Para más detalles, incluida información sobre facturación y cancelación, visita el <a href="#">Centro de ayuda</a>. El uso de Disney+, Hulu y Max está sujeto a sus respectivos términos y condiciones, consulta cada uno:{" "}
+              <a href="#">Acuerdo de suscripción de Disney+</a>, <a href="#">Acuerdo de suscripción de Hulu</a>, y
+              <a href="#"> Términos de uso de Max</a>. ©2023 Disney y sus entidades relacionadas. Max ©2023 Home Box Office, Inc.
             </p>
             <p>
-              By signing up for this bundle, Max will share your email address & subscription details with Disney+ and
-              Hulu for eligibility, marketing, and other purposes. For more info about your choices, see the{" "}
-              <a href="#">Privacy Center</a>.
+              Al suscribirte a este paquete, Max compartirá tu correo electrónico y los detalles de la suscripción con Disney+ y Hulu para fines de elegibilidad, marketing y otros. Para más información sobre tus opciones, consulta el <a href="#">Centro de privacidad</a>.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Plan Selection Section */}
+      {/* Sección de selección de plan */}
       <div className="plan-selection">
-        <h2 className="section-title">Find Your Perfect Plan</h2>
+        <h2 className="section-title">Encuentra tu plan perfecto</h2>
 
         <div className="tabs">
-          <button className={`tab ${activeTab === "bundles" ? "active" : ""}`} onClick={() => setActiveTab("bundles")}>
-            MAX BUNDLES
+          <button className={`tab ${activeTab === "plans" ? "active" : ""}`}>
+            PAQUETES MENSUALES
           </button>
-          <button className={`tab ${activeTab === "plans" ? "active" : ""}`} onClick={() => setActiveTab("plans")}>
-            MAX PLANS
-          </button>
+         
         </div>
 
         <div className="tab-content">
           {activeTab === "bundles" && (
             <div className="bundle-options">
-              {/* With Ads Bundle */}
+              {/* Paquete con anuncios */}
               <div className="bundle-card">
                 <div className="bundle-logos">
                   <img src="/disney-plus-logo.svg" alt="Disney+" />
                   <img src="/hulu-logo.svg" alt="Hulu" />
                   <img src="/max-logo.svg" alt="Max" />
                 </div>
-                <h3 className="bundle-title">With Ads</h3>
-                <p className="bundle-description">Max Basic With Ads, Disney+ Basic, and Hulu (With Ads)</p>
-                <button className="bundle-cta">SELECT BUNDLE</button>
+                <h3 className="bundle-title">Con anuncios</h3>
+                <p className="bundle-description">Max Básico con Anuncios, Disney+ Básico y Hulu (con anuncios)</p>
+                <button className="bundle-cta">SELECCIONAR PAQUETE</button>
               </div>
 
-              {/* No Ads Bundle */}
+              {/* Paquete sin anuncios */}
               <div className="bundle-card">
                 <div className="bundle-logos">
                   <img src="/disney-plus-logo.svg" alt="Disney+" />
                   <img src="/hulu-logo.svg" alt="Hulu" />
                   <img src="/max-logo.svg" alt="Max" />
                 </div>
-                <h3 className="bundle-title">No Ads</h3>
-                <p className="bundle-description">Max Standard, Disney+ Premium, and Hulu (No Ads)</p>
-                <button className="bundle-cta">SELECT BUNDLE</button>
+                <h3 className="bundle-title">Sin anuncios</h3>
+                <p className="bundle-description">Max Estándar, Disney+ Premium y Hulu (sin anuncios)</p>
+                <button className="bundle-cta">SELECCIONAR PAQUETE</button>
               </div>
             </div>
           )}
@@ -122,74 +114,74 @@ function App() {
           {activeTab === "plans" && (
             <div className="plans-grid">
               <div className="plan-option">
-                <h3 className="plan-option-title">Max With Ads</h3>
+                <h3 className="plan-option-title">Plan Mensual</h3>
                 <div className="plan-option-price">
                   <span className="dollar">$</span>
-                  <span className="amount">9.99</span>
-                  <span className="period">/mo</span>
+                  <span className="amount">350.00</span>
+                  <span className="period">/mes</span>
                 </div>
-                <button className="plan-option-cta">SELECT PLAN</button>
+                <button className="plan-option-cta">SELECCIONAR PLAN</button>
                 <ul className="plan-features">
                   <li>
-                    <Check /> Stream on 2 devices at once
+                    <Check /> Transmite en 2 dispositivos a la vez
                   </li>
                   <li>
                     <Check /> Full HD 1080p
                   </li>
                   <li>
-                    <Check /> 30+ channels of live TV
+                    <Check /> Más de 30 canales de TV en vivo
                   </li>
                   <li>
-                    <Check /> No offline downloads
+                    <Check /> Sin descargas offline
                   </li>
                 </ul>
               </div>
 
               <div className="plan-option featured">
-                <div className="popular-tag">MOST POPULAR</div>
-                <h3 className="plan-option-title">Max Ad-Free</h3>
+                <div className="popular-tag">MÁS POPULAR</div>
+                <h3 className="plan-option-title">Plan Trimestral</h3>
                 <div className="plan-option-price">
                   <span className="dollar">$</span>
-                  <span className="amount">15.99</span>
-                  <span className="period">/mo</span>
+                  <span className="amount">900.00</span>
+                  <span className="period">/3 meses</span>
                 </div>
-                <button className="plan-option-cta">SELECT PLAN</button>
+                <button className="plan-option-cta">SELECCIONAR PLAN</button>
                 <ul className="plan-features">
                   <li>
-                    <Check /> Stream on 2 devices at once
+                    <Check /> Transmite en 2 dispositivos a la vez
                   </li>
                   <li>
                     <Check /> Full HD 1080p
                   </li>
                   <li>
-                    <Check /> 30+ channels of live TV
+                    <Check /> Más de 30 canales de TV en vivo
                   </li>
                   <li>
-                    <Check /> 30 offline downloads
+                    <Check /> 30 descargas offline
                   </li>
                 </ul>
               </div>
 
               <div className="plan-option">
-                <h3 className="plan-option-title">Max Ultimate Ad-Free</h3>
+                <h3 className="plan-option-title">Plan Semestral</h3>
                 <div className="plan-option-price">
                   <span className="dollar">$</span>
-                  <span className="amount">19.99</span>
-                  <span className="period">/mo</span>
+                  <span className="amount">1,700.00</span>
+                  <span className="period">/6 meses</span>
                 </div>
-                <button className="plan-option-cta">SELECT PLAN</button>
+                <button className="plan-option-cta">SELECCIONAR PLAN</button>
                 <ul className="plan-features">
                   <li>
-                    <Check /> Stream on 4 devices at once
+                    <Check /> Transmite en 4 dispositivos a la vez
                   </li>
                   <li>
-                    <Check /> 4K UHD with Dolby Atmos
+                    <Check /> 4K UHD con Dolby Atmos
                   </li>
                   <li>
-                    <Check /> 30+ channels of live TV
+                    <Check /> Más de 30 canales de TV en vivo
                   </li>
                   <li>
-                    <Check /> 100 offline downloads
+                    <Check /> 100 descargas offline
                   </li>
                 </ul>
               </div>
@@ -198,468 +190,275 @@ function App() {
         </div>
       </div>
 
-      {/* Featured Content Section */}
+      {/* Sección de Contenido Destacado */}
       <div className="featured-content">
-        <h2 className="section-title">Stream What's Trending</h2>
+        <h2 className="section-title">Transmite lo que es tendencia</h2>
         <div className="content-grid">
           <div className="content-card">
             <div className="content-image">
-              <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Featured Content" />
+              <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Contenido destacado" />
               <div className="play-overlay">
                 <PlayCircle />
               </div>
             </div>
             <h3 className="content-title">House of the Dragon</h3>
             <p className="content-description">
-              The reign of House Targaryen begins with this prequel to the popular HBO series.
+              El reinado de la Casa Targaryen comienza con esta precuela de la popular serie de HBO.
             </p>
           </div>
 
           <div className="content-card">
             <div className="content-image">
-              <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Featured Content" />
+              <img src="https://th.bing.com/th/id/OIP.6dejNTg_GYTxMImWO_rgQQHaEK?rs=1&pid=ImgDetMain" alt="Contenido destacado" />
               <div className="play-overlay">
                 <PlayCircle />
               </div>
             </div>
             <h3 className="content-title">The Last of Us</h3>
             <p className="content-description">
-              After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl.
+              Tras una pandemia global que destruye la civilización, un sobreviviente endurecido se hace cargo de una niña de 14 años.
             </p>
           </div>
 
           <div className="content-card">
             <div className="content-image">
-              <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Featured Content" />
+              <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/18edde5043daa7e168c72f70877f0957a36f724975da1c398f5f0f7ae8d83a24._RI_TTW_.jpg" alt="Contenido destacado" />
               <div className="play-overlay">
                 <PlayCircle />
               </div>
             </div>
             <h3 className="content-title">Succession</h3>
             <p className="content-description">
-              Follow the Roy family as they contemplate their future once their aging father begins to step back from
-              the media conglomerate.
+              Sigue a la familia Roy mientras contemplan su futuro una vez que su padre envejecido comienza a retirarse del conglomerado mediático.
             </p>
           </div>
 
           <div className="content-card">
             <div className="content-image">
-              <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Featured Content" />
+              <img src="https://www.tvmovie.de/assets/2023/01/09/92878-the-white-lotus-s2-1920x1080.jpg" alt="Contenido destacado" />
               <div className="play-overlay">
                 <PlayCircle />
               </div>
             </div>
             <h3 className="content-title">The White Lotus</h3>
             <p className="content-description">
-              Follow the exploits of various guests and employees at an exclusive tropical resort over the span of a
-              week.
+              Sigue las peripecias de varios huéspedes y empleados en un exclusivo resort tropical durante el transcurso de una semana.
             </p>
           </div>
         </div>
       </div>
 
-      {/* See What's New Section */}
+      {/* Sección Descubre Novedades */}
       <div className="whats-new-section">
-        <h2 className="section-title">See What's New</h2>
+        <h2 className="section-title">Descubre las novedades</h2>
         <div className="whats-new-grid">
           <div className="whats-new-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="The White Lotus" />
+            <img src="https://th.bing.com/th/id/R.6303f4e4a158dbac416e5da534877c9d?rik=sX4KLy26XlFNqg&pid=ImgRaw&r=0" alt="The White Lotus" />
             <div className="whats-new-title">THE WHITE LOTUS</div>
           </div>
 
           <div className="whats-new-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="PITT" />
+            <img src="https://ntvb.tmsimg.com/assets/p29046771_b_h10_aa.jpg?w=1280&h=720" alt="PITT" />
             <div className="whats-new-title">PITT</div>
           </div>
 
           <div className="whats-new-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="PAUL IN AFRICA" />
-            <div className="whats-new-title">PAUL IN AFRICA</div>
+            <img src="https://th.bing.com/th/id/R.337428242da5a5eaadd7fb067defd569?rik=aMW75arAJrl74A&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f38500000%2fGame-of-Thrones-game-of-thrones-38503519-2560-1440.jpg&ehk=8WC7CltWFP1wG0irGyxIbAOrlZ1OzUMNNuR9jlolpbc%3d&risl=1&pid=ImgRaw&r=0" alt="PAUL IN AFRICA" />
+            <div className="whats-new-title">GAME OF THRONES</div>
           </div>
 
           <div className="whats-new-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="UNCHARTED CANYONS" />
-            <div className="whats-new-title">UNCHARTED CANYONS</div>
+            <img src="https://www.thefullarton.co.uk/uploads/images/events/EventsLandscape-Cinema-DespicableMe4-1920x1080.jpg" alt="UNCHARTED CANYONS" />
+            <div className="whats-new-title">MI VILLANO FAVORITO 4</div>
           </div>
 
           <div className="whats-new-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="LAST WEEK TONIGHT" />
-            <div className="whats-new-title">LAST WEEK TONIGHT</div>
+            <img src="https://frontend-assets.clipsource.com/60dedc6376ad9/hbo-60def166a1502/2024/09/26/66f519587ab3f_thumbnail.jpeg" alt="LAST WEEK TONIGHT" />
+            <div className="whats-new-title">COMO AGUA PARA CHOCOLATE</div>
           </div>
 
           <div className="whats-new-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="CELTICS CITY" />
-            <div className="whats-new-title">CELTICS CITY</div>
+            <img src="https://fmglobo.com/u/fotografias/m/2025/1/15/f1280x720-24850_156525_5050.png" alt="CELTICS CITY" />
+            <div className="whats-new-title">P.DIDDY</div>
           </div>
         </div>
       </div>
 
-      {/* Live Sports Section */}
+      {/* Sección Deportes en Vivo */}
       <div className="live-sports-section">
         <div className="live-sports-header">
-          <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Live Sports" className="live-sports-bg" />
+          <img src="https://eltiempolatino.com/wp-content/uploads/2023/09/Deportes-en-vivo-en-Max.png" alt="Deportes en vivo" className="live-sports-bg" />
           <div className="live-sports-content">
-            <h2 className="live-sports-title">Live Sports</h2>
+            <h2 className="live-sports-title">Deportes en Vivo</h2>
             <p className="live-sports-description">
-              Stream the NBA, NHL, MLB™, U.S. Soccer, NASCAR, Unrivaled, college football, and premier cycling events
-              live.
+              Transmite en vivo la NBA, NHL, MLB™, U.S. Soccer, NASCAR, Unrivaled, fútbol americano universitario y eventos de ciclismo de primer nivel.
             </p>
             <p className="live-sports-note">
-              Live Sports included only on Standard and Premium plans with select games and blackouts. *TM 2023 MLB
+              Deportes en vivo incluidos solo en planes Estándar y Premium con juegos seleccionados y restricciones de transmisión. *TM 2023 MLB
             </p>
           </div>
         </div>
 
         <div className="sports-categories">
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="NBA" />
+            <img src="https://wallpaperaccess.com/full/1305378.jpg" alt="NBA" />
             <span>NBA</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="NHL" />
+            <img src="https://images.squarespace-cdn.com/content/v1/5bdfef0a697a98c05dd88ac0/1592688102538-SYZRS0SR4YLY7O4J99EF/nhl.jpg" alt="NHL" />
             <span>NHL</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="MLB" />
+            <img src="https://img.mlbstatic.com/mlb-images/image/private/t_2x1/t_w1536/mlb/vvqvmab1yoe6kkljnpsd.jpg" alt="MLB" />
             <span>MLB™</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="U.S. Soccer" />
+            <img src="https://sportscredential.com/wp-content/uploads/2021/06/MLS-logo-black-1030x579.png" alt="U.S. Soccer" />
             <span>U.S. Soccer</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="NASCAR" />
+            <img src="https://sportsbase.io/images/gpfans/copy_1200x800/9eccdfd7aaf8782f26f1447d26704dd5c97d62a5.jpg" alt="NASCAR" />
             <span>NASCAR</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Unrivaled" />
+            <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2025-01/Unrivaled_generic_FTR.jpg?itok=NU_VncwW" alt="Unrivaled" />
             <span>Unrivaled</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="College Football" />
-            <span>College Football</span>
+            <img src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0101%2Fr956795_1296x729_16-9.jpg" alt="College Football" />
+            <span>Fútbol Americano Universitario</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Cycling" />
-            <span>Cycling</span>
+            <img src="https://i1.wp.com/www.wate.com/wp-content/uploads/sites/42/2019/06/usa-cycling-06-28-19-8.jpg?w=2000&ssl=1" alt="Cycling" />
+            <span>Ciclismo</span>
           </div>
         </div>
       </div>
 
-      {/* Home Shows Section */}
+      {/* Sección Programas del Hogar */}
       <div className="home-shows-section">
         <div className="home-shows-header">
-          <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Fixer Upper" className="home-shows-bg" />
+          <img src="https://m.media-amazon.com/images/S/pv-target-images/6d6106dbf2e043a8e6c0a8f9979a94760743edb7cd2a678e390c830bf668c983.jpg" alt="Fixer Upper" className="home-shows-bg" />
           <div className="home-shows-content">
             <div className="home-shows-logo">
               <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Fixer Upper" />
             </div>
-            <h3 className="home-shows-subtitle">Favorite</h3>
-            <h2 className="home-shows-title">Home Shows</h2>
+            <h3 className="home-shows-subtitle">Favoritos</h3>
+            <h2 className="home-shows-title">Programas del Hogar</h2>
           </div>
         </div>
 
         <div className="home-shows-grid">
           <div className="home-show-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Property Brothers" />
+            <img src="https://beam-images.warnermediacdn.com/BEAM_LD_DELIVERABLES/7db6d294-676a-4003-af20-6de3c5edf97a/5916239/7db6d294-676a-4003-af20-6de3c5edf97a_cover_artwork_horizontal_en-US_latam.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=500" alt="Property Brothers" />
             <div className="home-show-title">PROPERTY BROTHERS</div>
           </div>
 
           <div className="home-show-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Maine Cabin Masters" />
+            <img src="https://m.media-amazon.com/images/I/91aYC4n5p1L._RI_.jpg" alt="Maine Cabin Masters" />
             <div className="home-show-title">MAINE CABIN MASTERS</div>
           </div>
 
           <div className="home-show-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Hometown" />
+            <img src="https://blog.reelgood.com/wp-content/uploads/2024/01/hometown-1024x576.jpeg" alt="Hometown" />
             <div className="home-show-title">HOMETOWN</div>
           </div>
 
           <div className="home-show-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Bargain Block" />
+            <img src="https://beam-images.warnermediacdn.com/BEAM_LD_DELIVERABLES/e9474359-24e7-4cea-98b5-1095af3b2cda/e9474359-24e7-4cea-98b5-1095af3b2cda_default_en-US_standard.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom" alt="Bargain Block" />
             <div className="home-show-title">BARGAIN BLOCK</div>
           </div>
 
           <div className="home-show-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Good Bones" />
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/6d6106dbf2e043a8e6c0a8f9979a94760743edb7cd2a678e390c830bf668c983.jpg" alt="Good Bones" />
             <div className="home-show-title">GOOD BONES</div>
           </div>
 
           <div className="home-show-card">
-            <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="House Hunters" />
+            <img src="https://beam-images.warnermediacdn.com/BEAM_LD_DELIVERABLES/0d9fca26-74c6-45c8-add1-2440e32a6039/5495328/0d9fca26-74c6-45c8-add1-2440e32a6039_cover_artwork_horizontal_en-US_standard_20230912152250.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom" alt="House Hunters" />
             <div className="home-show-title">HOUSE HUNTERS</div>
           </div>
         </div>
       </div>
 
-      {/* Devices Section */}
-      <div className="devices-section">
-        <h2 className="section-title">Watch Anywhere</h2>
-        <p className="section-subtitle">
-          Stream on your favorite devices, including Smart TVs, phones, tablets, and more.
-        </p>
+      {/* Sección de Dispositivos */}
 
-        <div className="devices-grid">
-          <div className="device-card">
-            <img src="/device-tv.png" alt="TV" />
-            <h3>Smart TVs</h3>
-            <p>Samsung, LG, Sony, and more</p>
-          </div>
-
-          <div className="device-card">
-            <img src="/device-mobile.png" alt="Mobile" />
-            <h3>Mobile Devices</h3>
-            <p>iOS and Android</p>
-          </div>
-
-          <div className="device-card">
-            <img src="/device-laptop.png" alt="Laptop" />
-            <h3>Computers</h3>
-            <p>Chrome, Safari, Edge, Firefox</p>
-          </div>
-
-          <div className="device-card">
-            <img src="/device-game.png" alt="Game Console" />
-            <h3>Game Consoles</h3>
-            <p>PlayStation, Xbox</p>
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
+      {/* Sección de Preguntas Frecuentes */}
       <div className="faq-section">
-        <h2 className="section-title">Frequently Asked Questions</h2>
+        <h2 className="section-title">Preguntas Frecuentes</h2>
 
         <div className="faq-list">
           <div className="faq-item">
             <div className="faq-question">
-              <h3>What is Max?</h3>
+              <h3>¿Qué es Max?</h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                Max is the streaming platform that brings together all of HBO with even more movies, series, and Max
-                Originals for the whole family, including Friends, South Park, the DC Universe, the Wizarding World of
-                Harry Potter, and more.
+                Max es la plataforma de streaming que reúne todo HBO con aún más películas, series y Max Originals para
+                toda la familia, incluyendo Friends, South Park, el Universo DC, el Mundo Mágico de Harry Potter y más.
               </p>
             </div>
           </div>
 
           <div className="faq-item">
             <div className="faq-question">
-              <h3>How much does Max cost?</h3>
+              <h3>¿Cuánto cuesta Max?</h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                Max offers several plans starting at $9.99/month (with ads) or $15.99/month (ad-free). You can also
-                bundle Max with Disney+ and Hulu starting at $16.99/month.
+                Max ofrece varios planes a partir de $9.99/mes (con anuncios) o $15.99/mes (sin anuncios). También puedes
+                combinar Max con Disney+ y Hulu desde $16.99/mes.
               </p>
             </div>
           </div>
 
           <div className="faq-item">
             <div className="faq-question">
-              <h3>Can I watch live sports on Max?</h3>
+              <h3>¿Puedo ver deportes en vivo en Max?</h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                Yes, Max offers live sports including NBA, NHL, MLB, and soccer through the B/R Sports Add-On, which is
-                included at no additional cost for a limited time.
+                Sí, Max ofrece deportes en vivo incluyendo NBA, NHL, MLB y fútbol a través del complemento B/R Sports,
+                el cual está incluido sin costo adicional por un tiempo limitado.
               </p>
             </div>
           </div>
 
           <div className="faq-item">
             <div className="faq-question">
-              <h3>How do I cancel my subscription?</h3>
+              <h3>¿Cómo cancelo mi suscripción?</h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                You can cancel your Max subscription at any time through your account settings. Your subscription will
-                remain active until the end of your current billing period.
+                Puedes cancelar tu suscripción a Max en cualquier momento a través de la configuración de tu cuenta. Tu
+                suscripción seguirá activa hasta el final de tu período de facturación actual.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* CTA Section */}
+      {/* Sección de CTA */}
       <div className="cta-section">
-        <h2>Ready to start streaming?</h2>
-        <p>Sign up now and start watching today.</p>
-        <button className="cta-button">SIGN UP NOW</button>
+        <h2>¿Listo para comenzar a transmitir?</h2>
+        <p>Regístrate ahora y empieza a ver hoy mismo.</p>
+        <button className="cta-button">REGÍSTRATE AHORA</button>
       </div>
 
       {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-logo">
-            <img src="/max-logo.svg" alt="Max" />
-          </div>
-
-          <div className="footer-links">
-            <div className="footer-column">
-              <h4>Navigation</h4>
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Movies</a>
-                </li>
-                <li>
-                  <a href="#">Series</a>
-                </li>
-                <li>
-                  <a href="#">Originals</a>
-                </li>
-                <li>
-                  <a href="#">Just Added</a>
-                </li>
-                <li>
-                  <a href="#">Last Chance</a>
-                </li>
-                <li>
-                  <a href="#">Coming Soon</a>
-                </li>
-                <li>
-                  <a href="#">Trending Now</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h4>Genres</h4>
-              <ul>
-                <li>
-                  <a href="#">Action</a>
-                </li>
-                <li>
-                  <a href="#">Comedy</a>
-                </li>
-                <li>
-                  <a href="#">Crime</a>
-                </li>
-                <li>
-                  <a href="#">Documentaries</a>
-                </li>
-                <li>
-                  <a href="#">Drama</a>
-                </li>
-                <li>
-                  <a href="#">Fantasy & Sci-Fi</a>
-                </li>
-                <li>
-                  <a href="#">Horror</a>
-                </li>
-                <li>
-                  <a href="#">International</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h4>Account</h4>
-              <ul>
-                <li>
-                  <a href="#">Sign In</a>
-                </li>
-                <li>
-                  <a href="#">Sign Up</a>
-                </li>
-                <li>
-                  <a href="#">Manage Account</a>
-                </li>
-                <li>
-                  <a href="#">Parental Controls</a>
-                </li>
-                <li>
-                  <a href="#">Help Center</a>
-                </li>
-                <li>
-                  <a href="#">Supported Devices</a>
-                </li>
-                <li>
-                  <a href="#">Accessibility</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h4>Company</h4>
-              <ul>
-                <li>
-                  <a href="#">About Us</a>
-                </li>
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-                <li>
-                  <a href="#">Press</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Advertise</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Terms of Use</a>
-                </li>
-                <li>
-                  <a href="#">Cookie Preferences</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer-social">
-            <h4>Follow Us</h4>
-            <div className="social-icons">
-              <a href="#" aria-label="Facebook">
-                <Facebook />
-              </a>
-              <a href="#" aria-label="Twitter">
-                <Twitter />
-              </a>
-              <a href="#" aria-label="Instagram">
-                <Instagram />
-              </a>
-              <a href="#" aria-label="YouTube">
-                <Youtube />
-              </a>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <p>© 2023 Warner Bros. Discovery, Inc. or its subsidiaries and affiliates. All rights reserved.</p>
-            <div className="app-stores">
-              <a href="#">
-                <img src="/app-store.png" alt="App Store" />
-              </a>
-              <a href="#">
-                <img src="/google-play.png" alt="Google Play" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
 
 export default App
-

@@ -40,7 +40,7 @@ button {
 }
 
 .logo img {
-  height: 30px;
+  width: 40px;
 }
 
 .nav-actions {
@@ -97,7 +97,7 @@ button {
 
 .hero-subtitle {
   font-size: 20px;
-  margin-bottom: 48px;
+  margin-bottom: 10px;
 }
 
 .plans-container {
@@ -117,7 +117,7 @@ button {
 }
 
 .plan-logo img {
-  height: 40px;
+  height: 200px;
   margin-bottom: 16px;
 }
 
@@ -226,7 +226,8 @@ button {
 }
 
 .tab.active {
-  background-color: #333;
+  background-color: #ffffff;
+  color: black;
 }
 
 .bundle-options {
@@ -357,7 +358,7 @@ button {
 /* Featured Content Section */
 .featured-content {
   padding: 80px 24px;
-  background-color: #111;
+  background-color: #000000;
 }
 
 .content-grid {
@@ -381,8 +382,10 @@ button {
 
 .content-image img {
   width: 100%;
-  height: auto;
+  height: 160px;
   display: block;
+  background-size: cover;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -1006,5 +1009,9 @@ button {
   width: 100%;
   padding: 0;
   margin: 0;
+  position: absolute;
+  height: 600px;
+  background-size: cover;
+  object-fit: cover;
 }
 
