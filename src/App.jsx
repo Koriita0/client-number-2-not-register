@@ -446,7 +446,7 @@ function App() {
       <div className="cta-section">
         <h2>¿Listo para comenzar a transmitir?</h2>
         <p>Regístrate ahora y empieza a ver hoy mismo.</p>
-        <button className="cta-button">REGÍSTRATE AHORA</button>
+        <button className="cta-button" onClick={() => window.location.href = "https://wa.me/5660424104"}>REGÍSTRATE AHORA</button>
       </div>
 
       {/* Footer */}
