@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./App.css"
 import { ChevronDown } from "./icons/ChevronDown"
 import { PlayCircle } from "./icons/PlayCircle"
@@ -13,6 +13,9 @@ import icon from "./assets/icon.png"
 
 function App() {
   const [activeTab, setActiveTab] = useState("plans")
+  useEffect(() => {
+    document.title = "RTV Plus";
+  }, []);
 
   return (
     <div className="app">
