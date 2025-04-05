@@ -27,7 +27,7 @@ function App() {
             ESPAÑOL
             <ChevronDown />
           </button>
-          <button className="sign-up-btn">SUSCRÍBETE AHORA</button>
+          <a href="https://wa.me/5660424104" className="sign-up-btn">SUSCRÍBETE AHORA</a>
         </div>
       </header>
 
@@ -42,7 +42,7 @@ function App() {
             {/* Plan solo Max */}
             {/* Plan Paquete */}
             <div className="plan-card">
-            <div className="plan-logo">
+              <div className="plan-logo">
                 <img src={icon} alt="Max" />
               </div>
               <div className="plan-price">
@@ -53,7 +53,7 @@ function App() {
                   <span className="period">/MES</span>
                 </div>
               </div>
-              <button className="plan-cta">OBTENER EL PAQUETE</button>
+              <button className="plan-cta" onClick={() => window.location.href = "https://wa.me/5660424104"}>OBTENER EL PAQUETE</button>
             </div>
           </div>
 
@@ -79,7 +79,7 @@ function App() {
           <button className={`tab ${activeTab === "plans" ? "active" : ""}`}>
             PAQUETES MENSUALES
           </button>
-         
+
         </div>
 
         <div className="tab-content">
@@ -120,20 +120,17 @@ function App() {
                   <span className="amount">350.00</span>
                   <span className="period">/mes</span>
                 </div>
-                <button className="plan-option-cta">SELECCIONAR PLAN</button>
+                <button
+                  className="plan-option-cta"
+                  onClick={() => window.location.href = "https://wa.me/5660424104"}
+                >
+                  SELECCIONAR PLAN
+                </button>
                 <ul className="plan-features">
-                  <li>
-                    <Check /> Transmite en 2 dispositivos a la vez
-                  </li>
-                  <li>
-                    <Check /> Full HD 1080p
-                  </li>
-                  <li>
-                    <Check /> Más de 30 canales de TV en vivo
-                  </li>
-                  <li>
-                    <Check /> Sin descargas offline
-                  </li>
+                  <li><Check /> Transmite en 2 dispositivos a la vez</li>
+                  <li><Check /> Full HD 1080p</li>
+                  <li><Check /> Más de 30 canales de TV en vivo</li>
+                  <li><Check /> Sin descargas offline</li>
                 </ul>
               </div>
 
@@ -145,20 +142,17 @@ function App() {
                   <span className="amount">900.00</span>
                   <span className="period">/3 meses</span>
                 </div>
-                <button className="plan-option-cta">SELECCIONAR PLAN</button>
+                <button
+                  className="plan-option-cta"
+                  onClick={() => window.location.href = "https://wa.me/5660424104"}
+                >
+                  SELECCIONAR PLAN
+                </button>
                 <ul className="plan-features">
-                  <li>
-                    <Check /> Transmite en 2 dispositivos a la vez
-                  </li>
-                  <li>
-                    <Check /> Full HD 1080p
-                  </li>
-                  <li>
-                    <Check /> Más de 30 canales de TV en vivo
-                  </li>
-                  <li>
-                    <Check /> 30 descargas offline
-                  </li>
+                  <li><Check /> Transmite en 2 dispositivos a la vez</li>
+                  <li><Check /> Full HD 1080p</li>
+                  <li><Check /> Más de 30 canales de TV en vivo</li>
+                  <li><Check /> 30 descargas offline</li>
                 </ul>
               </div>
 
@@ -169,26 +163,25 @@ function App() {
                   <span className="amount">1,700.00</span>
                   <span className="period">/6 meses</span>
                 </div>
-                <button className="plan-option-cta">SELECCIONAR PLAN</button>
+                <button
+                  className="plan-option-cta"
+                  onClick={() => window.location.href = "https://wa.me/5660424104"}
+                >
+                  SELECCIONAR PLAN
+                </button>
                 <ul className="plan-features">
-                  <li>
-                    <Check /> Transmite en 4 dispositivos a la vez
-                  </li>
-                  <li>
-                    <Check /> 4K UHD con Dolby Atmos
-                  </li>
-                  <li>
-                    <Check /> Más de 30 canales de TV en vivo
-                  </li>
-                  <li>
-                    <Check /> 100 descargas offline
-                  </li>
+                  <li><Check /> Transmite en 4 dispositivos a la vez</li>
+                  <li><Check /> 4K UHD con Dolby Atmos</li>
+                  <li><Check /> Más de 30 canales de TV en vivo</li>
+                  <li><Check /> 100 descargas offline</li>
                 </ul>
               </div>
             </div>
           )}
+
         </div>
       </div>
+
 
       {/* Sección de Contenido Destacado */}
       <div className="featured-content">
