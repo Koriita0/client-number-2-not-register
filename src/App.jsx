@@ -36,7 +36,7 @@ function App() {
       <div className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">Series, películas y más imperdibles.</h1>
-          <p className="hero-subtitle">Elige un plan de Max o un paquete para comenzar a ver.</p>
+          <p className="hero-subtitle">Elige un plan de RTV Plus o un paquete para comenzar a ver.</p>
 
           <div className="plans-container">
             {/* Plan solo Max */}
@@ -59,14 +59,7 @@ function App() {
 
           {/* Texto Legal */}
           <div className="legal-text">
-            <p>
-              Solo MEXICO. Debes tener 18+. Disponible solo para compras con facturación directa a través de Disney+, Hulu y Max. Accede al contenido de cada servicio por separado. El contenido, las funciones y la compatibilidad con dispositivos varían según el servicio. Para más detalles, incluida información sobre facturación y cancelación, visita el <a href="#">Centro de ayuda</a>. El uso de Disney+, Hulu y Max está sujeto a sus respectivos términos y condiciones, consulta cada uno:{" "}
-              <a href="#">Acuerdo de suscripción de Disney+</a>, <a href="#">Acuerdo de suscripción de Hulu</a>, y
-              <a href="#"> Términos de uso de Max</a>. ©2023 Disney y sus entidades relacionadas. Max ©2023 Home Box Office, Inc.
-            </p>
-            <p>
-              Al suscribirte a este paquete, Max compartirá tu correo electrónico y los detalles de la suscripción con Disney+ y Hulu para fines de elegibilidad, marketing y otros. Para más información sobre tus opciones, consulta el <a href="#">Centro de privacidad</a>.
-            </p>
+            
           </div>
         </div>
       </div>
@@ -130,7 +123,6 @@ function App() {
                   <li><Check /> Transmite en 2 dispositivos a la vez</li>
                   <li><Check /> Full HD 1080p</li>
                   <li><Check /> Más de 30 canales de TV en vivo</li>
-                  <li><Check /> Sin descargas offline</li>
                 </ul>
               </div>
 
@@ -152,7 +144,6 @@ function App() {
                   <li><Check /> Transmite en 2 dispositivos a la vez</li>
                   <li><Check /> Full HD 1080p</li>
                   <li><Check /> Más de 30 canales de TV en vivo</li>
-                  <li><Check /> 30 descargas offline</li>
                 </ul>
               </div>
 
@@ -170,10 +161,9 @@ function App() {
                   SELECCIONAR PLAN
                 </button>
                 <ul className="plan-features">
-                  <li><Check /> Transmite en 4 dispositivos a la vez</li>
-                  <li><Check /> 4K UHD con Dolby Atmos</li>
+                <li><Check /> Transmite en 2 dispositivos a la vez</li>
+                  <li><Check /> Full HD 1080p</li>
                   <li><Check /> Más de 30 canales de TV en vivo</li>
-                  <li><Check /> 100 descargas offline</li>
                 </ul>
               </div>
             </div>
