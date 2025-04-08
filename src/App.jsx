@@ -10,6 +10,8 @@ import { Twitter } from "./icons/Twitter"
 import { Instagram } from "./icons/Instagram"
 import { Youtube } from "./icons/Youtube"
 import icon from "./assets/icon.png"
+import video1 from './assets/test.mp4'
+import video2 from './assets/test2.mp4'
 
 function App() {
   const [activeTab, setActiveTab] = useState("plans")
@@ -330,48 +332,13 @@ function App() {
 
       {/* Sección Programas del Hogar */}
       <div className="home-shows-section">
-        <div className="home-shows-header">
-          <img src="https://m.media-amazon.com/images/S/pv-target-images/6d6106dbf2e043a8e6c0a8f9979a94760743edb7cd2a678e390c830bf668c983.jpg" alt="Fixer Upper" className="home-shows-bg" />
-          <div className="home-shows-content">
-            <div className="home-shows-logo">
-              <img src="https://th.bing.com/th/id/R.037dcb4fffba044518ae532db27ee4cd?rik=yZhmo8UMOjSrig&pid=ImgRaw&r=0" alt="Fixer Upper" />
-            </div>
-            <h3 className="home-shows-subtitle">Favoritos</h3>
-            <h2 className="home-shows-title">Programas del Hogar</h2>
-          </div>
-        </div>
+       <h1>Test</h1>
+       <video src={video1} controls></video>
+      </div>
 
-        <div className="home-shows-grid">
-          <div className="home-show-card">
-            <img src="https://beam-images.warnermediacdn.com/BEAM_LD_DELIVERABLES/7db6d294-676a-4003-af20-6de3c5edf97a/5916239/7db6d294-676a-4003-af20-6de3c5edf97a_cover_artwork_horizontal_en-US_latam.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=500" alt="Property Brothers" />
-            <div className="home-show-title">PROPERTY BROTHERS</div>
-          </div>
-
-          <div className="home-show-card">
-            <img src="https://m.media-amazon.com/images/I/91aYC4n5p1L._RI_.jpg" alt="Maine Cabin Masters" />
-            <div className="home-show-title">MAINE CABIN MASTERS</div>
-          </div>
-
-          <div className="home-show-card">
-            <img src="https://blog.reelgood.com/wp-content/uploads/2024/01/hometown-1024x576.jpeg" alt="Hometown" />
-            <div className="home-show-title">HOMETOWN</div>
-          </div>
-
-          <div className="home-show-card">
-            <img src="https://beam-images.warnermediacdn.com/BEAM_LD_DELIVERABLES/e9474359-24e7-4cea-98b5-1095af3b2cda/e9474359-24e7-4cea-98b5-1095af3b2cda_default_en-US_standard.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom" alt="Bargain Block" />
-            <div className="home-show-title">BARGAIN BLOCK</div>
-          </div>
-
-          <div className="home-show-card">
-            <img src="https://m.media-amazon.com/images/S/pv-target-images/6d6106dbf2e043a8e6c0a8f9979a94760743edb7cd2a678e390c830bf668c983.jpg" alt="Good Bones" />
-            <div className="home-show-title">GOOD BONES</div>
-          </div>
-
-          <div className="home-show-card">
-            <img src="https://beam-images.warnermediacdn.com/BEAM_LD_DELIVERABLES/0d9fca26-74c6-45c8-add1-2440e32a6039/5495328/0d9fca26-74c6-45c8-add1-2440e32a6039_cover_artwork_horizontal_en-US_standard_20230912152250.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom" alt="House Hunters" />
-            <div className="home-show-title">HOUSE HUNTERS</div>
-          </div>
-        </div>
+      <div className="home-shows-section">
+       <h1>Test2</h1>
+       <video src={video2} controls></video>
       </div>
 
       {/* Sección de Dispositivos */}
