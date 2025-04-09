@@ -617,6 +617,13 @@ button {
   background-color: #000;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.home-shows-section h2 {
+  margin-bottom: 30px;
 }
 
 .home-shows-header {

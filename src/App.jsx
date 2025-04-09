@@ -12,6 +12,10 @@ import { Youtube } from "./icons/Youtube"
 import icon from "./assets/icon.png"
 import video1 from './assets/test.mp4'
 import video2 from './assets/test2.mp4'
+import sports1 from './assets/sports1.jpg'
+import sports2 from './assets/sports2.jpg'
+import sports3 from './assets/sports3.png'
+import sports4 from './assets/sports4.jpg'
 
 function App() {
   const [activeTab, setActiveTab] = useState("plans")
@@ -115,7 +119,7 @@ function App() {
                 <h3 className="plan-option-title">Plan Mensual</h3>
                 <div className="plan-option-price">
                   <span className="dollar">$</span>
-                  <span className="amount">350.00</span>
+                  <span className="amount">300.00</span>
                   <span className="period">/mes</span>
                 </div>
                 <button
@@ -136,7 +140,7 @@ function App() {
                 <h3 className="plan-option-title">Plan Trimestral</h3>
                 <div className="plan-option-price">
                   <span className="dollar">$</span>
-                  <span className="amount">900.00</span>
+                  <span className="amount">850.00</span>
                   <span className="period">/3 meses</span>
                 </div>
                 <button
@@ -156,7 +160,7 @@ function App() {
                 <h3 className="plan-option-title">Plan Semestral</h3>
                 <div className="plan-option-price">
                   <span className="dollar">$</span>
-                  <span className="amount">1,700.00</span>
+                  <span className="amount">1,650.00</span>
                   <span className="period">/6 meses</span>
                 </div>
                 <button
@@ -304,18 +308,18 @@ function App() {
           </div>
 
           <div className="sports-category">
-            <img src="https://sportscredential.com/wp-content/uploads/2021/06/MLS-logo-black-1030x579.png" alt="U.S. Soccer" />
-            <span>U.S. Soccer</span>
+            <img src={sports3} alt="U.S. Soccer" />
+            <span>TUDN</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://sportsbase.io/images/gpfans/copy_1200x800/9eccdfd7aaf8782f26f1447d26704dd5c97d62a5.jpg" alt="NASCAR" />
-            <span>NASCAR</span>
+            <img src={sports4} alt="NASCAR" />
+            <span>FOX</span>
           </div>
 
           <div className="sports-category">
-            <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2025-01/Unrivaled_generic_FTR.jpg?itok=NU_VncwW" alt="Unrivaled" />
-            <span>Unrivaled</span>
+            <img src={sports2} alt="Unrivaled" />
+            <span>UFC</span>
           </div>
 
           <div className="sports-category">
@@ -324,20 +328,20 @@ function App() {
           </div>
 
           <div className="sports-category">
-            <img src="https://i1.wp.com/www.wate.com/wp-content/uploads/sites/42/2019/06/usa-cycling-06-28-19-8.jpg?w=2000&ssl=1" alt="Cycling" />
-            <span>Ciclismo</span>
+            <img src={sports1} />
+            <span>F1</span>
           </div>
         </div>
       </div>
 
       {/* Sección Programas del Hogar */}
       <div className="home-shows-section">
-       <h1>Test</h1>
+       <h2>Cómo descargar la aplicación de R Clien?</h2>
        <video src={video1} controls></video>
       </div>
 
       <div className="home-shows-section">
-       <h1>Test2</h1>
+       <h2>Demostración de servicio</h2>
        <video src={video2} controls></video>
       </div>
 
@@ -350,52 +354,49 @@ function App() {
         <div className="faq-list">
           <div className="faq-item">
             <div className="faq-question">
-              <h3>¿Qué es Max?</h3>
+              <h3>¿En qué puedo ver la app?</h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                Max es la plataforma de streaming que reúne todo HBO con aún más películas, series y Max Originals para
-                toda la familia, incluyendo Friends, South Park, el Universo DC, el Mundo Mágico de Harry Potter y más.
+              Puedes usarla en tu celular Android, tablet, TV Box o en tu televisión si tiene Android TV.
               </p>
             </div>
           </div>
 
           <div className="faq-item">
             <div className="faq-question">
-              <h3>¿Cuánto cuesta Max?</h3>
+              <h3>¿Qué incluye la app?</h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                Max ofrece varios planes a partir de $9.99/mes (con anuncios) o $15.99/mes (sin anuncios). También puedes
-                combinar Max con Disney+ y Hulu desde $16.99/mes.
+              Tendrás más de 300 canales en vivo, 12,000 películas y eventos deportivos en vivo.
               </p>
             </div>
           </div>
 
           <div className="faq-item">
             <div className="faq-question">
-              <h3>¿Puedo ver deportes en vivo en Max?</h3>
+              <h3>¿Puedo probar la app gratis?</h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                Sí, Max ofrece deportes en vivo incluyendo NBA, NHL, MLB y fútbol a través del complemento B/R Sports,
-                el cual está incluido sin costo adicional por un tiempo limitado.
+              No damos pruebas gratis, pero puedes ver un video aquí mismo donde te enseñamos cómo funciona.
               </p>
             </div>
           </div>
 
           <div className="faq-item">
             <div className="faq-question">
-              <h3>¿Cómo cancelo mi suscripción?</h3>
+              <h3>¿Cómo pago y cuándo me activan?
+              </h3>
               <ChevronDown />
             </div>
             <div className="faq-answer">
               <p>
-                Puedes cancelar tu suscripción a Max en cualquier momento a través de la configuración de tu cuenta. Tu
-                suscripción seguirá activa hasta el final de tu período de facturación actual.
+              Solo eliges tu plan, haces el pago y mandas tu comprobante por WhatsApp. La activación tarda menos de 30 minutos.
               </p>
             </div>
           </div>
