@@ -622,6 +622,18 @@ button {
   justify-content: center;
 }
 
+.home-shows-section video {
+  width: 100%;
+  max-width: 400px; /* Ajusta este valor según lo que necesites */
+  height: auto;
+  aspect-ratio: 9 / 16; /* Mantiene un formato vertical tipo TikTok */
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; /* Opcional: esquinas redondeadas */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Opcional: sombra */
+}
+
+
 .home-shows-section h2 {
   margin-bottom: 30px;
 }

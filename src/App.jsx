@@ -58,7 +58,7 @@ function App() {
                 <div className="price-label">LOS PLANES COMIENZAN DESDE</div>
                 <div className="price">
                   <span className="dollar">$</span>
-                  <span className="amount">350.00 </span>
+                  <span className="amount">300.00 </span>
                   <span className="period">/MES</span>
                 </div>
               </div>
